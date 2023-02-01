@@ -93,16 +93,23 @@ p {
 .header__menu-link {
   color: #212121;
 }
+.header__menu-link:hover,
+.footer__adress--contact:hover {
+  color: var(--blue-hover);
+}
 .header__contact {
   column-gap: 50px;
 }
-.header__contact-link {
+.header__contact--link * {
   color: #757575;
+  align-items: center;
+  display: flex;
+  column-gap: 10px;
 }
-.header__menu-link:hover,
-.header__contact-link:hover,
-.footer__adress--contact:hover {
-  color: var(--blue-hover);
+.header__contact--link *:hover,
+:focus {
+  color: #2196f3;
+  fill: #2196f3;
 }
 .slogan {
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -133,6 +140,18 @@ p {
   border: none;
   padding: 10px 42px;
   font-weight: 700;
+}
+.lorem__icons {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+.lorem__icons--box {
+  width: 277.5px;
+  height: 120px;
+  background-color: rgba(245, 244, 250, 1);
+  margin-bottom: 30px;
+  padding: 25px 102.34px;
 }
 .lorem__list {
   display: flex;
@@ -179,11 +198,58 @@ p {
   font-weight: 400;
   line-height: 19px;
   letter-spacing: 0.03em;
-  padding-bottom: 30px;
+  padding-bottom: 16px;
   color: #757575;
+}
+.our_team__icons,
+.footer__table--icons {
+  display: flex;
+  justify-content: center;
+  fill: rgba(175, 177, 184, 1);
+  column-gap: 10px;
+  padding-bottom: 30px;
+}
+.our_team__icons--box,
+.footer__table--icon-box {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.our_team__icons--box:hover,
+.footer__table--icon-box:hover {
+  background-color: #2196f3;
+  cursor: pointer;
+  fill: #ffffff;
+}
+.our_clients {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+  fill: rgba(175, 177, 184, 1);
+}
+.our_clients__icons:hover {
+  border-color: #2196f3;
+  fill: #2196f3;
+  cursor: pointer;
+}
+.our_clients__icons {
+  width: 170px;
+  height: 92px;
+  border: 1px solid rgba(175, 177, 184, 1);
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .footer {
   padding: 60px 0;
+}
+.footer__table {
+  display: flex;
+  column-gap: 70px;
 }
 .footer__logo {
   display: inline-block;
@@ -213,6 +279,18 @@ p {
   color: #ffffff99;
   line-height: 24px;
   margin-bottom: 9px;
+}
+.footer__table--join-us {
+  font-family: Roboto;
+  font-weight: 700;
+  font-size: 14px;
+  color: #ffffff;
+}
+.footer__table--icons {
+  margin-top: 20px;
+}
+.footer__table--icon-box {
+  background-color: rgba(255, 255, 255, 0.1);
 }
 /* porfolio */
 .bookmarks__buttons {
