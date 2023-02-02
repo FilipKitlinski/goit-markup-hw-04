@@ -102,6 +102,7 @@ p {
 }
 .header__contact--link * {
   color: #757575;
+  fill: #757575;
   align-items: center;
   display: flex;
   column-gap: 10px;
