@@ -99,15 +99,15 @@ p {
 }
 .header__contact {
   column-gap: 50px;
+  fill: #757575;
 }
 .header__contact--link * {
   color: #757575;
-  fill: #757575;
   align-items: center;
   display: flex;
   column-gap: 10px;
 }
-.header__contact--link *:hover,
+.header__contact--link :hover,
 :focus {
   color: #2196f3;
   fill: #2196f3;
