@@ -4,6 +4,7 @@
   --blue-hover: #2196f3;
   --roboto-font: Roboto;
   --raleway-font: Raleway;
+  --grey-color: #757575;
 }
 * {
   margin: 0;
@@ -102,18 +103,18 @@ p {
 }
 .header__contact {
   column-gap: 50px;
-  fill: #757575;
+  fill: var(--grey-color);
 }
-.header__contact--link * {
-  color: #757575;
+.header__contact--link {
+  color: var(--grey-color);
   align-items: center;
   display: flex;
   column-gap: 10px;
 }
-.header__contact--link :hover,
-:focus {
-  color: #2196f3;
-  fill: #2196f3;
+.header__contact--link:hover,
+.header__contact--link:focus {
+  color: var(--blue-hover);
+  fill: var(--blue-hover);
 }
 .slogan {
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
@@ -169,7 +170,7 @@ p {
   font-weight: 400;
   line-height: 24px;
   letter-spacing: 0.03em;
-  color: #757575;
+  color: var(--grey-color);
 }
 .what_we_do {
   padding-top: 0;
@@ -205,7 +206,7 @@ p {
   line-height: 19px;
   letter-spacing: 0.03em;
   padding-bottom: 16px;
-  color: #757575;
+  color: var(--grey-color);
 }
 .our_team__icons,
 .footer__table--icons {
@@ -226,7 +227,7 @@ p {
 }
 .our_team__icons--box:hover,
 .footer__table--icon-box:hover {
-  background-color: #2196f3;
+  background-color: var(--blue-hover);
   cursor: pointer;
   fill: #ffffff;
 }
@@ -237,8 +238,8 @@ p {
   fill: rgba(175, 177, 184, 1);
 }
 .our_clients__icons:hover {
-  border-color: #2196f3;
-  fill: #2196f3;
+  border-color: var(--blue-hover);
+  fill: var(--blue-hover);
   cursor: pointer;
 }
 .our_clients__icons {
@@ -290,20 +291,24 @@ p {
 .join_us {
   padding-top: 60px;
   position: relative;
-  right: 650px;
+  right: 830px;
+  top: 20px;
 }
 .footer__table--join-us {
   font-family: Roboto;
   font-weight: 700;
   font-size: 14px;
   color: #ffffff;
+  padding-top: 60px;
+  padding-right: 500px;
 }
 .footer__table--icons {
   margin-top: 20px;
+  /* margin-right: 500px; */
 }
 .footer__table--icon-box {
   background-color: rgba(255, 255, 255, 0.1);
-fill: #ffffff;
+  fill: #ffffff;
 }
 /* porfolio */
 .bookmarks__buttons {
@@ -348,5 +353,5 @@ fill: #ffffff;
 }
 .tiles__table--subscription {
   padding: 2px 24px 20px 24px;
-  color: #757575;
+  color: var(--grey-color);
 }
